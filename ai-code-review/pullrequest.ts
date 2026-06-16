@@ -11,9 +11,7 @@ export class PullRequest {
     private _pullRequestId: string = tl.getVariable('System.PullRequest.PullRequestId')!;
 
     constructor() {
-        this._httpsAgent = new Agent({
-            rejectUnauthorized: false
-        });
+        this._httpsAgent = new Agent();
     }
 
     public async AddComment(fileName: string, comment: string): Promise<boolean> {

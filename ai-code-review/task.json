@@ -15,7 +15,7 @@
     "inputs": [
         {
             "name": "claudeApiKey",
-            "type": "string",
+            "type": "secureString",
             "label": "Claude API Key (Optional)",
             "defaultValue": "",
             "required": false,
@@ -31,7 +31,7 @@
         },
         {
             "name": "openAiApiKey",
-            "type": "string",
+            "type": "secureString",
             "label": "OpenAI API Key (Optional)",
             "defaultValue": "",
             "required": false,
